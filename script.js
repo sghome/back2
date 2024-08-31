@@ -139,7 +139,7 @@ const material1 = new THREE.MeshStandardMaterial({
 // Load the model
 const objloader = new OBJLoader();
 objloader.load(
-    'https://cdn.glitch.me/c536c49d-7661-4fd9-81b8-918d12539028/budazul.obj',
+    'https://raw.githubusercontent.com/miroleon/peace-of-mind/main/assets/buddha.obj',
  (object) => {
         object.children[0].material = material1;
         object.scale.setScalar( 20 );
