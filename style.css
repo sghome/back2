@@ -12,7 +12,7 @@ html, body {
   margin:0;
   padding: 0;
   overflow-x: hidden;
-  background-color: var(--background-color);
+  background-color: var(.container);
   font-family: 'Open Sans', sans-serif;
   color: var(--text-color);
   text-align: center;
