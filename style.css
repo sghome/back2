@@ -1,9 +1,247 @@
-html,
-body {
-  margin: 0;
-  overflow-x: hidden;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --headline-color: white;
+  --background-color: #11151c;
+  --text-color: rgba(255, 255, 255, 0.5);
 }
+
+html, body {
+  margin:0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: var(--background-color);
+  font-family: 'Open Sans', sans-serif;
+  color: var(--text-color);
+  text-align: center;
+}
+
+
 .container {
   height: 100vh;
   width: 100vw;
+}
+
+
+
+/* TR-WP.COM */
+
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+@import url('http://fonts.googleapis.com/css?family=Lato:100,300,400|Raleway:100,300,400,500,600,700|Open+Sans:100,300,400,500,600');
+
+
+
+.trwpwhatsappballon {
+font-size: 14px;
+border-radius: 12px;
+border: 1px solid #fff;
+max-width: 250px;
+}
+
+.trwpwhatsapptitle {
+background-color: #22c15e;
+color: white;
+padding: 14px;
+border-radius: 12px 12px 0px 0px;
+text-align: center;
+}
+
+.trwpwhatsappmessage {
+padding: 16px 12px;
+background-color: white;
+}
+
+.trwpwhatsappinput {
+background-color: white;
+border-radius: 0px 0px 12px 12px;
+}
+
+.trwpwhatsappinput input {
+width: 206px;
+border-radius: 10px;
+margin: 1px 1px 0px 10px;
+padding:10px;
+font-family: "Raleway", Arial, sans-serif;
+font-weight: 300;
+font-size: 13px;
+background-color: #efefef;
+border: 1px solid #d4d4d4;
+}
+
+.trwpwhatsappbutton {
+background-color: #22c15e;
+border-radius: 20px;
+padding: 8px 15px;
+cursor: pointer;
+color: #fff;
+max-width: 220px;
+margin-top: 10px;
+margin-bottom: 10px;
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+.trwpwhatsappall {
+position: fixed;
+z-index: 9999999999999999999;
+bottom: 0;
+right: 10px;
+font-family: "Raleway", Arial, sans-serif;
+font-weight: 300;
+font-size: 15px;
+}
+
+.trwpwhatsappsendbutton {
+  color: #22c15e;
+  cursor:pointer;
+}
+
+button {border: none;}
+button i {
+float: right;
+position: absolute;
+z-index: 999999999999;
+right: 23px;
+top: 11;
+bottom: 81px;
+font-size: 18px !important;
+}
+
+.kapat {
+position: absolute;
+right: 8px;
+top: 6px;
+font-size: 13px;
+border: 1px solid #fff;
+border-radius: 99px;
+padding: 2px 5px 2px 5px;
+color: white;
+font-size: 10px;
+cursor: pointer;
+}
+
+
+
+
+
+
+/* Existing CSS */
+.canvas-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+
+
+
+
+
+
+.headline-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+#text-behind, #text-front, #text-behind-blur {
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  text-align: center;
+  font-size: clamp(24px, 20vw, 200px);
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 10px;
+  line-height: 0.8;
+}
+
+#text-behind {
+  color: var(--headline-color);
+  z-index: 1;
+}
+
+#text-behind-blur {
+  color: var(--headline-color);
+  filter: blur(7.5px);
+  -webkit-filter: blur(7.5px);
+  z-index: 0;
+}
+
+#text-front {
+  /*  Set text-color to transparent to only show the outline  */
+  color: transparent;
+  text-stroke: 2px var(--headline-color);
+  -webkit-text-stroke: 2px var(--headline-color);
+  z-index: 3;
+}
+
+/* Less relevant code */
+
+.more-content{
+  height: 500vh;
+  width: 100vw;
+}
+
+.text-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  top: 5%;
+  height: 90%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 3;
+}
+
+.title{
+  font-size: 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-weight: 500;
+}
+
+.socials{
+}
+
+.socials svg{
+  margin: 0 5px;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1);
+}
+
+.socials svg:hover{
+  transform: scale(1.2);
+  filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 1));
+}
+
+p{
+  width: 300px;
+  font-size: 0.75rem;
+}
+
+
+a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+a:hover{
+  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.9));
 }
