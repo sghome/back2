@@ -12,7 +12,7 @@ html, body {
   margin:0;
   padding: 0;
   overflow-x: hidden;
-  background-color: var(.container);
+  background-color: var(--background-color);
   font-family: 'Open Sans', sans-serif;
   color: var(--text-color);
   text-align: center;
@@ -136,8 +136,35 @@ cursor: pointer;
 .canvas-container {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100vh; /* O cualquier otra altura deseada */
+  overflow: hidden;
 }
+
+
+
+#canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Asegura que el canvas esté detrás del contenido */
+}
+
+.headline-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none; /* Permite clics pasar a los elementos debajo */
+  z-index: 1; /* Asegura que el texto esté encima del canvas */
+}
+
+
 
 
 
